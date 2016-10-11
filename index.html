@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <title>分页组件示例</title>
+    <style>
+
+        .pagination{
+            margin: 20px auto;
+            text-align: center;
+        }
+        .pagination li {
+            display: inline-block;
+            margin: auto 2px;
+            font-size: 12px;
+            color: #7b7b7b;
+        }
+
+        .pagination .pagebar-step {
+            text-decoration: none;
+            display: inline-block;
+            padding: 3px 8px;
+            color: #7b7b7b;
+            background-color: #fff;
+            border: 1px solid #ced2db;
+        }
+
+        .pagination .pagebar-cur {
+            background-color: #55bf5f;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="pager"></div>
+
+<script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="pager.js"></script>
+<script>
+
+    Pager('#pager',{
+        curPage: 2, //当前第几页
+        pageSize: 10, //每页多少条
+        totalSize:98, //共多少条数据
+        pageCallBack:function (page) {
+            console.log(page);
+        }
+    });
+
+</script>
+</body>
+</html>
