@@ -1,0 +1,23 @@
+{
+  "name": "pager",
+  "version": "1.0.0",
+  "description": "a simple pagination plugin",
+  "main": "pager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuchun/pager.git"
+  },
+  "keywords": [
+    "pager",
+    "pagination"
+  ],
+  "author": "liuchun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuchun/pager/issues"
+  },
+  "homepage": "https://github.com/liuchun/pager#readme"
+}
